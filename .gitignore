@@ -16,4 +16,8 @@
 local_settings.py
 
 # Virtual Environment
-environment/*
+/environment/
+
+# Static Files
+/static/
+/media/

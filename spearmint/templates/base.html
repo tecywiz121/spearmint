@@ -1,18 +1,24 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>{% block title %}{% endblock title %} | SpearMint</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="charset" content="utf-8">
-        <link type="text/css" rel="stylesheet" href="{{ STATIC_DIR }}css/bootstrap.css">
-        <link type="text/css" rel="stylesheet" href="{{ STATIC_DIR }}font/stylesheet.css">
-        <link type="text/css" rel="stylesheet" href="{{ STATIC_DIR }}css/screen.css">
-        <link type="text/css" rel="stylesheet" href="{{ STATIC_DIR }}css/bootstrap-responsive.css">
-        <script type="text/javascript" src="{{ STATIC_DIR }}js/jquery-1.7.1.min.js"></script>
-        <script type="text/javascript" src="{{ STATIC_DIR }}js/bootstrap-dropdown.js"></script>
+        <meta charset="utf-8">
+        <!--[if lt IE 9]>
+        <script src="{% static 'ie/IE9.js' %}"></script>
+        <script src="{% static 'ie/ie7-squish.js' %}"></script>
+        <![endif]-->
+        <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'font/stylesheet.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/screen.css' %}">
+        <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap-responsive.css' %}">
+        <script type="text/javascript" src="{% static 'js/jquery-1.7.1.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/bootstrap-dropdown.js' %}"></script>
 
-        <style>.noscript { display: none; }</style>
-        <noscript><style>.noscript { display: inline; }</style></noscript>
+        <style type="text/css">.noscript { display: none; }</style>
+        <noscript><style type="text/css">.noscript { display: inline; }</style></noscript>
 
         {% block head %}
         {% endblock head %}
