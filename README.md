@@ -12,8 +12,10 @@ using the python virtualenv package.  Creating a virtual environment is
 recommended.  Next, install the following packages and versions.
 
 > Django==1.4
-
+>
 > South==0.7.5
+>
+> django-registration==0.8
 
 For production or testing environments, install:
 

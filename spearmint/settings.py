@@ -1,7 +1,7 @@
-from os.path import realpath, join as path_join
+from os.path import dirname, realpath, join as path_join
 
 try:
-    PROJECT_ROOT = realpath(__file__)
+    PROJECT_ROOT = dirname(realpath(__file__))
 except NameError:
     PROJECT_ROOT = realpath('.')
 
@@ -130,7 +130,10 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'south',
+    'registration',
 )
+
+ACCOUNT_ACTIVATION_DAYS = 5
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

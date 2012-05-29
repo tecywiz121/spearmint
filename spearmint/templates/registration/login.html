@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post">
+        {{ form.non_field_errors }}
+
+        {% for field in form.visible_fields %}
+            <div class="clearfix">
+                {{ field.errors }}
+                {{ field.label_tag }}
+                <div class="input">
+                    {{ field }}
+                </div><!-- /.input -->
+            </div>
+        {% endfor %}
+        
+        {% csrf_token %}
+        {% for hidden in form.hidden_fields %}
+            {{ hidden }}
+        {% endfor %}
+        <div class="actions">
+            <input type="submit" value="Login »" class="btn primary"/>
+            <input type="reset" value="Reset" class="btn secondary"/>
+        </div><!-- /.actions -->
+</form>
+{% endblock content %}

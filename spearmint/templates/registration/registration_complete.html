@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="alert-message block-message success">
+    <p>
+        Congratulations!  You've successfully registered for SpearMint!  All that
+        is left to do is activate your account.  You should be getting an email
+        soon with your registration code.  Just click that link, and you'll be
+        on your way.
+
+    </p>
+    <div class="container">
+        <a class="btn primary large" title="Home" href="{% url home.views.index %}">Home »</a>
+    </div><!-- /.container -->
+</div><!-- /.success -->
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="alert-message block-message error">
+    <p>
+        Sorry, but the activation code you provided was either invalid or expired,
+        please try again.        
+    </p>
+    <div class="container">
+        <a href="{% url registration_activate %}" class="btn primary large">Try Again</a>
+    </div><!-- /.container -->
+</div><!-- /.error -->
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="alert-message block-message success">
+    <p>
+        Phewf.  You're through registration.  Almost ready to try SpearMint?
+        Awesome!
+
+    </p>
+    <div class="container">
+        <a class="btn primary large" title="Settings" href="{% url buzzer.views.profile %}">Continue »</a>
+    </div><!-- /.container -->
+</div><!-- /.success -->
+{% endblock content %}
