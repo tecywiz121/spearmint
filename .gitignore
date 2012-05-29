@@ -1,4 +1,16 @@
-*.log
+# Python files
 *.pot
 *.pyc
+*.pyo
+
+# Patch Files
+*.rej
+*.orig
+
+# Database Files
+*.db
+*.sqlite
+
+# Django Files
+*.log
 local_settings.py
