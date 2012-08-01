@@ -143,6 +143,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'south',
     'registration',
+    'chips',
 )
 
 ACCOUNT_ACTIVATION_DAYS = 5

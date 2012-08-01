@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST" action="{% url chips_activate %}">
+    {% csrf_token %}
+    <input type="text" name="chip" id="chip" placeholder="New MintChip Number">
+    <button type="submit" class="btn btn-primary btn-danger">I lost my MintChip</button>
+</form>
+<form method="POST" action="{% url chips_deactivate %}">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-primary btn-success">I found my MintChip</button>
+</form>
+{% endblock content %}
